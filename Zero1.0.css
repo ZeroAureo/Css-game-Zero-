@@ -1,95 +1,93 @@
-/* Fondo general */
+/* Aplicar fondo a todo el documento */
 html, body {
     background-color: #1a1a1a !important; /* Fondo oscuro */
     color: #ffffff; /* Texto blanco */
-    font-family: 'Roboto', sans-serif; /* Fuente personalizada */
+    font-family: 'Roboto', sans-serif !important; /* Fuente personalizada */
     margin: 0;
     padding: 0;
 }
 
+/* Aplicar fondo a todos los contenedores */
+.container, .main-content, .wrapper, .content {
+    background-color: #1a1a1a !important; /* Fondo oscuro */
+}
+
 /* Encabezados personalizados */
 h1, h2, h3, h4, h5, h6 {
-    color: #1db954; /* Verde brillante */
+    color: #1db954 !important; /* Verde brillante */
     text-transform: uppercase; /* Texto en mayúsculas */
     margin-bottom: 20px;
 }
 
 /* Párrafos estilizados */
 p {
-    line-height: 1.6;
-    margin-bottom: 20px;
+    line-height: 1.6 !important;
+    margin-bottom: 20px !important;
+    color: #ffffff !important; /* Asegurar texto blanco */
 }
 
 /* Botones personalizados */
-button {
-    background-color: #1db954; /* Fondo verde */
-    color: #121212; /* Texto negro */
-    border: none;
-    padding: 10px 20px;
-    border-radius: 25px; /* Bordes redondeados */
-    font-size: 16px;
-    cursor: pointer;
-    transition: background-color 0.3s ease, transform 0.3s ease;
-    margin: 10px;
+button, .btn, .button {
+    background-color: #1db954 !important; /* Fondo verde */
+    color: #121212 !important; /* Texto negro */
+    border: none !important;
+    padding: 10px 20px !important;
+    border-radius: 25px !important; /* Bordes redondeados */
+    font-size: 16px !important;
+    cursor: pointer !important;
+    transition: background-color 0.3s ease, transform 0.3s ease !important;
+    margin: 10px !important;
 }
 
-button:hover {
-    background-color: #14833b; /* Verde más oscuro al pasar el ratón */
-    transform: scale(1.1); /* Escala al pasar el ratón */
+button:hover, .btn:hover, .button:hover {
+    background-color: #14833b !important; /* Verde más oscuro al pasar el ratón */
+    transform: scale(1.1) !important; /* Escala al pasar el ratón */
 }
 
 /* Enlaces estilizados */
 a {
-    color: #1db954; /* Verde brillante */
-    text-decoration: none;
-    transition: color 0.3s ease;
+    color: #1db954 !important; /* Verde brillante */
+    text-decoration: none !important;
+    transition: color 0.3s ease !important;
 }
 
 a:hover {
-    color: #14833b; /* Verde más oscuro al pasar el ratón */
+    color: #14833b !important; /* Verde más oscuro al pasar el ratón */
 }
 
 /* Cuadros de texto personalizados */
 input[type="text"], input[type="password"], textarea {
-    background-color: #333; /* Fondo gris oscuro */
-    color: #ffffff; /* Texto blanco */
-    border: 2px solid #1db954; /* Borde verde */
-    padding: 10px;
-    border-radius: 5px;
-    outline: none;
-    margin: 10px 0;
+    background-color: #333 !important; /* Fondo gris oscuro */
+    color: #ffffff !important; /* Texto blanco */
+    border: 2px solid #1db954 !important; /* Borde verde */
+    padding: 10px !important;
+    border-radius: 5px !important;
+    outline: none !important;
+    margin: 10px 0 !important;
 }
 
 input[type="text"]:focus, input[type="password"]:focus, textarea:focus {
-    border-color: #14833b; /* Borde verde más oscuro al enfocar */
+    border-color: #14833b !important; /* Borde verde más oscuro al enfocar */
 }
 
-/* Contenedor con sombra y esquinas redondeadas */
-.container {
-    background-color: #1e1e1e; /* Fondo gris muy oscuro */
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5); /* Sombra */
-    margin: 20px 0;
-}
-
-/* Barra lateral */
-.sidebar {
-    background-color: #333; /* Fondo gris oscuro */
-    color: #ffffff; /* Texto blanco */
-    padding: 20px;
-    border-radius: 10px; /* Bordes redondeados */
+/* Contenedores con sombra y esquinas redondeadas */
+.container, .main-content, .wrapper, .content {
+    background-color: #1e1e1e !important; /* Fondo gris muy oscuro */
+    padding: 20px !important;
+    border-radius: 10px !important;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5) !important; /* Sombra */
+    margin: 20px 0 !important;
 }
 
 /* Barras de progreso */
 .progress-bar {
-    background-color: #444; /* Fondo gris oscuro */
-    border-radius: 5px; /* Bordes redondeados */
-    overflow: hidden; /* Ocultar desbordamiento */
+    background-color: #444 !important; /* Fondo gris oscuro */
+    border-radius: 5px !important; /* Bordes redondeados */
+    overflow: hidden !important; /* Ocultar desbordamiento */
 }
 
 .progress-bar .progress {
-    background-color: #1db954; /* Progreso verde */
-    height: 20px; /* Altura de la barra de progreso */
-    border-radius: 5px; /* Bordes redondeados */
+    background-color: #1db954 !important; /* Progreso verde */
+    height: 20px !important; /* Altura de la barra de progreso */
+    border-radius: 5px !important; /* Bordes redondeados */
 }
