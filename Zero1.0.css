@@ -1,6 +1,6 @@
 /* Fondo general */
-body {
-    background-color: #1a1a1a; /* Fondo oscuro */
+html, body {
+    background-color: #1a1a1a !important; /* Fondo oscuro */
     color: #ffffff; /* Texto blanco */
     font-family: 'Roboto', sans-serif; /* Fuente personalizada */
     margin: 0;
